@@ -1,7 +1,6 @@
-# Simple-PHP-Blog
+# PHP Blog Website
 Simple blog system for personal development using procedural PHP and MYSQL.
 
-For educational purposes only.
 
 # Setup
 
