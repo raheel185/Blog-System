@@ -1,0 +1,457 @@
+.all_posts{
+    display:grid!important;
+    grid-template-columns: 1fr 1fr 1fr 1fr!important;
+    grid-gap: 25px;
+   justify-content: center;
+   align-items: center;
+}
+.all_posts img{
+    height: 250px;
+    width: 100%!important;
+    object-fit: cover;
+}
+
+
+*,body{
+
+font-family: 'Poppins', sans-serif!important;
+
+}
+
+
+
+.banner_posts{
+    display: grid!important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.banner_posts img{
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in all;
+    object-fit: cover;
+}
+
+.banner_item{
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+}
+.banner_item::after{
+    transition: .52s ease all;
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8));
+}
+.banner_item:hover>img{
+   scale:1.06;
+}
+.banner_item:hover:after{  
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,1));
+}
+ 
+.item_inner{
+    min-width: 100%;
+    z-index: 5;
+    position: absolute;
+    top:65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.item_inner h3{
+    font-size: 20px;
+    text-align: center;
+  color:white!important;
+  font-weight: 700;
+  line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.item_inner a{
+    text-decoration: none!important;
+}
+.item_inner div{
+    color: white!important;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.cat_post{
+    background: #000;
+    color:white;
+    padding:3.5px;
+    font-size: 14px;
+}
+
+
+.post_section{
+    max-width: 1180px;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.post_section h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.border_line{
+    width:70px;
+    height: 1px;
+    background: #000;
+    margin:auto;
+    margin-bottom: 45px;
+}
+.all_posts{
+    max-width: 1100px;
+    margin:auto;
+    padding-bottom: 30px!important;
+}
+.title_main{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 60px;
+   
+}
+.paginations{
+    margin-bottom: 50px;
+}
+
+.cur_pg{
+    background: #000!important;
+    color:white;
+}
+.ot_pg{
+    border:none!important;
+}
+.ft_posts,.all_posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:25px;
+}
+.ft_posts img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.ft_posts h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.ft_posts span{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center!important;
+}
+
+.ft_item{
+    text-decoration: none;
+    border:1px solid rgba(0,0,0,.07);
+    padding-bottom: 10px;
+    transition: .35 ease-out all;
+}
+.ft_item:hover{
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* header css */
+
+
+.main_header{
+    
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+.main_header img{
+    width:200px;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,.07)!important;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.menu_header a{
+    background: transparent!important;
+    text-decoration: none!important;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.menu_header a:hover{
+    background: transparent!important;
+    color: #555 !important;
+}
+
+
+
+
+
+
+
+
+
+/* Comments CSS */
+
+
+.comments .comment_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.comments .comment_header .total {
+    color: #777777;
+    font-size: 14px;
+}
+.comments .comment_header .write_comment_btn {
+    margin: 0;
+}
+.comments .write_comment_btn, .comments .write_comment button {
+    display: inline-block;
+    background-color: #565656;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+}
+.comments .write_comment_btn:hover, .comments .write_comment button:hover {
+    background-color: #636363;
+}
+.comments .write_comment {
+    display: none;
+    padding: 20px 0 10px 0;
+}
+.comments .write_comment textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 150px;
+    margin-top: 10px;
+}
+.comments .write_comment input {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.comments .write_comment button {
+    cursor: pointer;
+}
+.comments .comment {
+    padding-top: 10px;
+}
+.comments .comment .name {
+    display: inline;
+    padding: 0 5px 3px 0;
+    margin: 0;
+    font-size: 16px;
+    color: #555555;
+}
+.comments .comment .date {
+    color: #888888;
+    font-size: 14px;
+}
+.comments .comment .content {
+    padding: 5px 0 5px 0;
+}
+.comments .comment .reply_comment_btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888888;
+}
+.comments .comment .replies {
+    padding-left: 30px;
+}
+
+
+
+/* single - post - css */
+
+.single_banner{
+    width:1000px;
+    margin:auto;
+    
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.single_banner p{
+    font-size: 16px;
+}
+
+.img_div{
+    min-width:100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_div img{
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+.img_div h2{
+    z-index: 5;
+    font-weight: bold;
+    color:white;
+    font-size: 48px;
+    max-width: 700px;
+    text-align: center;
+    line-height: 48px;
+}
+
+
+
+.comments,.comments_form{
+    max-width: 1000px;
+    margin:auto;
+    margin-bottom: 60px;
+}
+
+.comments_form form{
+    display: flex;
+    flex-direction: column;
+}
+.comments_form form input{
+    padding:10px;
+    border:1px solid rgba(0,0,0,.2);
+    margin-bottom: 7px;
+}
+.comments_form form textarea{
+    padding:10px;
+    border:1px solid rgba(0,0,0,.2);
+    margin-bottom: 7px;
+}
+
+.comments_form button{
+    margin-top: 20px;
+    max-width: 180px;
+    padding:8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: none;
+    border:1px solid rgba(0,0,0,.8);
+    box-shadow: none!important;
+    color:#000;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+.comments_form button:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+
+
+
+/* footer-css */
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    color:white;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+
+    .iconsf a img{
+        max-width:18px;
+        color:white;
+        margin-right: 11px;
+        transition: .23s ease all;
+    }
+    .iconsf a img:hover{
+        scale: 1.1;
+    }
+    
